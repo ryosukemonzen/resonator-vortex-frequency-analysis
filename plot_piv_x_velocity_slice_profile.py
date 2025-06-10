@@ -56,7 +56,7 @@ for run_num in run_list:
     range_data_on_line.sort_values(by='y', inplace=True)
 
     y_extracted = range_data_on_line['y'].values
-    u_extracted = range_data_on_line['u'].values
+    u_extracted = range_data_on_line['u'].values*(-1)
 
     u_max = np.max(u_extracted)
     u_min = np.min(u_extracted)
